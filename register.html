@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/25aa50c84a.js" crossorigin="anonymous"></script>
+
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/register.css">
+    <title>Muzikku</title>
+  </head>
+  <body>
+
+    <div>
+        <nav class="mb-3">
+            <a class="brand text-center" href="index.html">Muzikku</a>
+        </nav>
+    </div>
+
+    <!-- Register Form -->
+
+    <section class="pb-5 mb-5">
+        <h1 class="display-4 text-center mb-5">FORMULIR REGISTRASI</h1>
+        <div class="container">
+            <form action="" name="daftar" class="mr-5 ml-5 pb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="name2">Nama Panggilan</label>
+                        <input type="text" name="name2" id="name2" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password" class="form-control">
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="form-control">
+
+                <div class="pilihan" id="pilihan">
+                    <h1 class="text-center display-4">Anda ingin mendaftar sebagai apa?</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button onclick="vjadi('Pelajar')">
+                                    <input type="hidden" id="menjadi1" value="Pelajar">
+                                    <img src="img/student.png" class="obj1" width="200px" alt="">
+                                    <img src="img/play-our-games-01.png" width="350px" alt="">
+                                    <h3 class="pelajar">Pelajar</h3>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button onclick="vjadi('Pengajar')">
+                                    <input type="hidden" id="menjadi1" value="Pengajar">
+                                    <img src="img/play-our-games-01.png" width="350px" alt="">
+                                    <img src="img/teacher.png" class="obj2" width="200px" alt="">
+                                    <h3 class="pengajar">Pengajar</h3>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <label for="menjadi">Mendaftar menjadi</label>
+                <input type="text" name="menjadi" id="menjadi" class="form-control" disabled>
+
+                <label for="alamat">Alamat tempat tinggal</label>
+                <textarea name="alamat" id="alamat" class="form-control" rows="2"></textarea>
+
+                <label for="alasan">Penjelasan mengenai ketertarikan pada musik</label>
+                <textarea name="alasan" id="alasan" class="form-control mb-5" rows="5"></textarea>
+
+                <a class="btn btn-primary" href="login.html">Daftar</a>
+                <button type="reset" class="btn btn-danger"> Reset</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/registrasi.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

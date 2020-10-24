@@ -1,0 +1,239 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom, white,white, rgb(52, 174, 255));
+}
+
+.row{
+    margin-right: 0px;
+}
+.jumbotron{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url(../img/bg-jt_01.jpg);
+    background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+    text-align: center;
+    background-position: top;
+    color: white;
+    border-radius: 0px;
+    text-shadow: 1px 1px 1px black;
+    overflow: hidden;
+}
+.jumbotron .btn{
+    text-shadow: none;
+}
+.jumbotron .lead{
+    font-size: 24px;
+}
+.jumbotron .brand{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+}
+
+.navbar .btn{
+    border-radius: 50px;
+}
+.nav-link{
+    transition-duration: 0.3s;
+}
+.nav-link:hover{
+    border-bottom: solid 3px rgb(52, 174, 255);
+    color: rgb(78, 184, 255) !important;
+}
+.navbar-brand{
+    font-family: 'Kaushan Script', cursive;
+}
+.navbar .dropdown-menu{
+    transition-duration: 2s;
+}
+.aktif .nav-link{
+    border-bottom: solid 3px rgb(52, 174, 255);
+}
+
+.utama .ruang{
+    width: 100%;
+    border: 3px solid black;
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: 0.5s;
+}
+.utama .ruang.muncul{
+    opacity: 1;
+    transform: translate(0,0px);
+}
+
+.latar p{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.pkiri, .pkanan{
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.pkiri{
+    transform: translate(-50px,0);
+}
+
+.pkanan{
+    transform: translate(50px,0);
+}
+
+.pkiri.pmuncul, .pkanan.pmuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.kartu{
+    opacity: 0;
+    transition: 0.8s;
+}
+.kartu.cmuncul{
+    opacity: 1;
+}
+/* Desktop CSS */
+
+@media screen and (min-width: 992px) {
+    .navbar-brand, .nav-link{
+        color: white !important ;
+    }
+    .jumbotron{
+        margin-top: -60px;
+        padding-top: 150px;
+    }
+    .navbar-brand, .nav-link{
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+/* Mobile CSS */
+@media screen and (max-width:992px){
+    .jumbotron .display-4{
+        font-size: 40pt;
+    }
+    .jumbotron .lead{
+        font-size: 18pt !important;
+    }
+}
+
+
+.utama{
+    margin-top: 50px;
+}
+
+.pp{
+
+    margin:5% auto 0 auto;
+    overflow:hidden;
+}
+#pp1{  
+    background:url(../img/admin.png);
+    background-size:cover;
+    background-position: center;
+    border-radius:5px;
+    width: 220px;
+    height: 300px;
+    transition-duration: 0.5s;
+}
+
+#overlay {
+    background:blue;
+    text-align:center;
+    opacity:0;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    transition-duration: 0.4s;
+    color: white;
+}
+  
+#pp1:hover #overlay{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.atasan{
+    padding-left: 20px;
+    margin-left: -30px;
+    padding-right: 20px;
+    margin-right: -15px;
+    padding-bottom: 10px;
+}
+.modal-content p{
+    text-align: justify;
+}
+
+.close{
+    color: white;
+    opacity: 100%;
+}
+  
+i{
+    cursor: pointer;
+}
+
+.fa-envelope, .fa-whatsapp{
+    color: #007bff;
+}
+.fa-envelope:hover, .fa-whatsapp:hover{
+    color: #0056b3;
+}
+
+.bg-color-base-2{
+    background-color: rgb(209, 209, 255);
+}
+
+#view {  
+    font-family:Helvetica;
+    font-weight:bold;
+    color: white;
+}
+
+footer{
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 990px) {
+    #pp1{
+        width: 170px;
+        height: 232px;
+    }
+
+    .modal-lg{
+        max-width: 650px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #pp1{
+        width: 220px;
+        height: 295px;
+    }
+    .modal-dialog {
+        max-width: 350px;
+        margin: 1.75rem auto;
+    }
+    .modal-content .row img{
+        padding-top: 5px;
+        padding-left: 30px;
+        border-radius: 10px;
+    }
+    .modal-content h3{
+        font-size: 15pt;
+    }
+    .modal-content h5{
+        font-size: 12pt;
+    }
+
+    .atasan{
+        padding-left: 20px;
+        margin-left: 0px;
+        padding-right: 20px;
+        margin-right: -15px;
+        padding-bottom: 10px;
+    }
+}

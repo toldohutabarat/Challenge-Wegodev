@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(to right,rgb(0, 110, 255),rgb(4, 0, 255));
+}
+.login-side{
+    background-color: white;
+    width: 28%;
+    height: 320px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 150px auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: relative;
+}
+
+.login-side .img1{
+    width: 30px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -20px;
+}
+.login-side .img2{
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    right: 0;
+    margin-right: 10px;
+
+}
